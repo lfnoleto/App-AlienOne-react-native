@@ -5,16 +5,17 @@ import ProgressCircle from 'react-native-progress-circle';
 class App extends React.Component{
     render(){
         return(
-            <View>
+          
+            <View style={styles.Cicler}>
              <ProgressCircle
                 percent={30}
-                radius={70}
+                radius={100}
                 borderWidth={8}
                 color="#3399FF"
                 shadowColor="#999"
-                bgColor="#fff"
+                bgColor="red"
             >
-              <Text style={{ fontSize: 18}}>{'18.5°C'}</Text>
+              <Text style={{ fontSize: 75, color:'#fff'}}>{'18.5°'}</Text>
             </ProgressCircle>
           </View>
         );

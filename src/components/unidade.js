@@ -5,7 +5,7 @@ import ProgressCircle from 'react-native-progress-circle';
 class App extends React.Component{
     render(){
         return(
-            <View>
+            <View style={styles.conteiner}>
             <ProgressCircle
               percent={30}
               radius={70}
@@ -24,13 +24,15 @@ class App extends React.Component{
 
 const styles = StyleSheet.create({
     conteiner:{
-
+      marginTop:40,
+      marginLeft:40
     },
     Cicler: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       backgroundColor: 'red',
+      marginTop:40
       
 
     },
