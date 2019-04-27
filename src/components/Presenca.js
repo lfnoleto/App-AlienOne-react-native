@@ -14,7 +14,7 @@ class App extends React.Component{
               borderWidth={8}
               color="#3399FF"
               shadowColor="#999"
-              bgColor="#fff"
+              bgColor="#ececec"
             
             >
               <Text style={{ fontSize: 20}}>{'18.0°C'}</Text>
