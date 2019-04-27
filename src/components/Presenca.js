@@ -3,6 +3,8 @@ import {View,Text,StyleSheet} from 'react-native';
 import ProgressCircle from 'react-native-progress-circle';
 
 class App extends React.Component{
+
+
     render(){
         return(
             <View style={styles.conteiner}>
@@ -24,9 +26,11 @@ class App extends React.Component{
 
 const styles = StyleSheet.create({
     conteiner:{
+      flex: 1,
       marginTop:40,
-      marginLeft:40,
-      flex:1
+      flexDirection:'row'
+      
+     
     },
     Cicler: {
       flex: 1,
