@@ -1,17 +1,14 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 import  HomeScreen from '../src/screens/Home';
-import  SobreScreen from '../src/screens/Sobre';
+import LoginScreen from '../src/screens/Login/';
 import { createStackNavigator, createAppContainer } from "react-navigation";
-
 
 const AppNavigator = createStackNavigator(
   {
-    Home: HomeScreen,
-    Sobre:SobreScreen
+    Home  :HomeScreen,
+    Login :LoginScreen
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Login",
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#303644',
