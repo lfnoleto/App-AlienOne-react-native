@@ -14,11 +14,12 @@ const AppNavigator = createStackNavigator(
     initialRouteName: "Home",
     defaultNavigationOptions: {
       headerStyle: {
-        backgroundColor: '#455a64',
+        backgroundColor: '#303644',
       },
       headerTintColor: '#fff',
       headerTitleStyle: {
-        fontWeight: 'bold',
+        //fontWeight: 'bold',
+        fontFamily:'EvilIcons'
       },
     },
   }

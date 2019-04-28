@@ -1,45 +1,53 @@
 import React from 'react';
 import {View,Text,StyleSheet} from 'react-native'; 
-import ProgressCircle from 'react-native-progress-circle';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 class App extends React.Component{
     render(){
-        return(
-            <View style={styles.conteiner}>
+      return(
+        <View style={styles.conteiner}>
 
-            <ProgressCircle
-              percent={30}
-              radius={70}
-              borderWidth={8}
-              color="#3399FF"
-              shadowColor="#999"
-              bgColor="#ececec"
-            
-            >
-               <Icon name="cloud" size={50} color="#ffd100"/>
-             
-            </ProgressCircle>
+          <Text style={styles.umidade}>Umidade Do Ar</Text>
+          <View style={styles.Cicler}>
+            <Icon name="cloud" size={35} color="#ffd100" style={styles.icon}/>
+            <Text style={styles.text} >{'-6°'}</Text>
           </View>
-        );
+        </View>
+      );
     }
 } 
 
 const styles = StyleSheet.create({
-    conteiner:{
-      marginTop:40,
-      marginLeft:40,
-      flex:1
-    },
-    Cicler: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'red',
-      marginTop:40
-      
-
-    },
+  conteiner:{
+    marginTop:20,
+  },
+  Cicler: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop:40,
+    flexDirection:'row'
+  },
+  text:{
+    fontSize:40,
+    fontFamily:'DS-DIGIT',
+    color:'#fff',
+    marginTop:10,
+    marginLeft:10,
+    justifyContent: 'center',
+    
+  },
+  icon:{
+    paddingTop:15
+  },
+  umidade:{
+    fontSize:30,
+    color:'#fff',
+    marginTop:80,
+    marginLeft:10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft:100
+  },
 });
 
 export default App;

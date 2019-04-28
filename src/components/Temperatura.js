@@ -1,29 +1,26 @@
 import React from 'react';
 import {View,Text,StyleSheet,StatusBar} from 'react-native'; 
 import ProgressCircle from 'react-native-progress-circle';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class App extends React.Component{
-    render(){
-        return(
-         
-            <View style={styles.Cicler}>
-              <StatusBar
-                backgroundColor="#455a64" barStyle="light-content"
-              />
-             <ProgressCircle
-                percent={30}
-                radius={140}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#999"
-                bgColor="#455a64"
-            >
-              <Text style={{ fontSize: 75, color:'#fff'}}>{'18.5°'}</Text>
-            </ProgressCircle>
-          </View>
-        );
-    }
+  render(){
+    return(
+      <View style={styles.Cicler}>
+        <ProgressCircle
+          percent={30}
+          radius={140}
+          borderWidth={8}
+          color="#fff"
+          shadowColor="#999"
+          bgColor="#303644"
+        >
+        <Icon name="cloud" size={50} color="#fff"/>
+        <Text style={styles.text}>{'18.5°'}</Text>
+        </ProgressCircle>
+      </View>
+    );
+  }
 } 
 
 
@@ -32,17 +29,17 @@ const styles = StyleSheet.create({
 
   },
   Cicler: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#455a64',
-    borderBottomLeftRadius: 140,
-    borderBottomRightRadius: 140,
-
-   
-    
-
+    backgroundColor: '#303644',
+    marginTop:40
   },
+  text:{
+    fontSize: 90,
+    color:'#fff',
+    fontFamily:'DS-DIGI',
+    marginTop:20
+  }
 });
 
 export default App;
